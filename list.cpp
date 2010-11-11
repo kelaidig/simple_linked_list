@@ -1,13 +1,10 @@
 /*
- *  linked_list.cpp
+ *  list.cpp
  *  singly_linked_list
- *
- *  Created by Keith E. Laidig on 11/4/10.
- *  Copyright 2010 HHMI/UW. All rights reserved.
  *
  */
 
-#include "linked_list.h"
+#include "list.h"
 #include <iostream>
 
 linked_list::linked_list()

@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-#include "linked_list.h"
+#include "list.h"
 
 int main ()
 {
@@ -13,7 +13,11 @@ int main ()
 	
 	linked_list list2 = list1;
 	
+	cout << "after copy constructor:" << endl;
 	cout << list2 << endl;
+
+	list2.append(9);
+	cout << "after append of 9:" << endl;
 	
     return 0;
 }

@@ -1,11 +1,8 @@
-#ifndef LINKED_LIST_H
-#define LINKED_LIST_H
+#ifndef LIST_H
+#define LIST_H
 /*
- *  linked_list.h
+ *  list.h
  *  singly_linked_list
- *
- *  Created by Keith E. Laidig on 11/4/10.
- *  Copyright 2010 HHMI/UW. All rights reserved.
  *
  */
 

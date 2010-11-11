@@ -1,9 +1,18 @@
 #include "list.h"
 
-
 list::list()
 { head = NULL; };
-list::list(const list& )
+
+list::list(const list& orig)
+{
+    if (orig.head == NULL)  // empty list
+    {
+    	this->head = NULL;
+    }
+    else
+    {
+        node *curr_ptr = head;
+
 list::~list();
 
 void append(int nval)
@@ -27,5 +36,13 @@ void append(int nval)
     }
 }
 
-friend ostream& operator << (ostream &, const list& );
-
+friend ostream& operator << (ostream &ostrm, const list& list)
+{
+    node *curr_ptr;
+    while (curr_ptr != NULL)
+    {
+        ostrm << curr_ptr->value << " " ;
+	curr_ptr = curr_ptr->next;
+    }
+    return ostrm;
+}

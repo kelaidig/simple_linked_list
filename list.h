@@ -4,6 +4,7 @@
  *  list.h
  *  singly_linked_list
  *
+ * testing out weird ideas...
  */
 
 #include "node.h"

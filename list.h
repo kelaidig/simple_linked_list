@@ -22,6 +22,8 @@ public:
 
 	void append(int );
 	
+	linked_list& operator= (const linked_list& );
+	
 	friend ostream& operator<< (ostream& ostrm, const linked_list& );
 
 };

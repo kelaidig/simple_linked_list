@@ -64,6 +64,24 @@ void linked_list::append(int nv)
 	}
 }
 
+linked_list& linked_list::operator= (const linked_list &right)
+{
+	if (right.head == NULL)  // an empty list
+	{
+		this->head = NULL; 
+	}
+	else 
+	{
+		node *curr_ptr = right.head;
+		while (curr_ptr != NULL)
+		{
+			append(curr_ptr->value);
+			curr_ptr = curr_ptr->next;
+		}
+	}
+	return *this;
+}
+
 std::ostream& operator<< (std::ostream& ostrm, const linked_list& list)
 {
 	node *curr_ptr = list.head;

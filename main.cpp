@@ -17,7 +17,20 @@ int main ()
 	cout << list2 << endl;
 
 	list2.append(9);
-	cout << "after append of 9:" << endl;
+	cout << "after append of 9 to new list:" << endl;
+	cout << list2 << endl;
+
+	linked_list list3;
+	
+	list3 = list2;
+	
+	cout << "after overloaded assignement operator:" << endl;
+	cout << list3 << endl;
+
+	list3.append(11);
+	cout << "after append of 11 to new list:" << endl;
+	cout << list3 << endl;
+	
 	
     return 0;
 }

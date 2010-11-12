@@ -2,6 +2,8 @@
  *  list.cpp
  *  singly_linked_list
  *
+ * testing crazy ideas..
+ *
  */
 
 #include "list.h"
